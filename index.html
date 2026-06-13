@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>라푸위키</title>
         <link rel="icon" href="https://i.namu.wiki/i/eszPfZduZVPkkJq0SLdZm46ffkqxMxLjolI_0o3i0yIxH5e-Bs4ePHgku_xO5SBGLtuxOcv8twILb0tltwg57Q.webp">
-        <style>
-        </style>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="main.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="main-page">
     <div class="navbar">
     <div class="logo" style="margin-left: 27px;">
         <img src="data:image/png;base64,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" alt = "나무위키 로고">
@@ -51,29 +52,29 @@
 
     <div class="container">
         <div class="main-content">
-            <h1 class="main-title" style="margin-bottom: 0px; margin-top: 5px; font-size:33px;">이 위키는 짭입니다.</h1>
-            <p class="recentedit">최근 수정 시각: 2026-01-25 08:40:00</p>
+            <h1 class="main-title" style="margin-bottom: 0px; margin-top: 5px; font-size:33px;">이 위키는 가짜입니다..</h1>
+            <p class="recentedit">최근 수정 시각: 2026-06-13 16:05:00</p>
             <div class ="CF" style="font-size:14px;">
-                분류: <a href="#">이현재</a> | <a href="#">축구 못함</a> | <a href="#">오채원</a>
+                분류: <a href="#">라푸</a> | <a href="#">분류1</a> | <a href="#">분류2</a>
             </div>
             <div class="index">
                 목차
                 <br>
                 <ul style="list-style:none; padding-left:10px;">
                     <li><a href="#s-1">1</a>. 개요</li>
-                    <li><a href="#s-2">2</a>. 현재</li>
-                    <li><a href="#s-3">3</a>. 축구 실력</li>
-                    <li><a href="#s-4">4</a>. 기타</li>
+                    <li><a href="#s-2">2</a>. 소제목 1</li>
+                    <li><a href="#s-3">3</a>. 소제목 2</li>
+                    <li><a href="#s-4">4</a>. 소제목 3</li>
                 </ul>
             </div>
             <div class="content-box">
                 <h2 id="s-1"><a href="#s-1">1.</a> 개요</h2>
-                <p>이 문서는 1학년 4반 14번 차원우가 html을 배우고 처음 만든 나무위키 짭 사이트이다.</p>
-                <h2 id="s-2"><a href="#s-2">2.</a> 이현재</h2>
-                <p>사하중학교에서 옴</p>
-                <h2 id="s-3"><a href="#s-3">3.</a> 축구 실력</h3>
-                <p>개못한다 <del>그래도 역대 골 수 2골</del><br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함<br>개못함</p>
-                <h2 id="s-4"><a href="#s-4">4.</a> 기타</h2>
+                <p>이 문서는 나무위키의 클론 문서이다.</p>
+                <h2 id="s-2"><a href="#s-2">2.</a> 소제목 1</h2>
+                <p>시작</p></p>
+                <h2 id="s-3"><a href="#s-3">3.</a> 소제목 2</h3>
+                <p>html의 모든 요소를 적용할 수 있다.</p>
+                <h2 id="s-4"><a href="#s-4">4.</a> 소제목 3</h2>
                 <p>끝</p>
             </div>
         </div>
@@ -84,11 +85,11 @@
                     <span>실시간 검색어</span>
                 </div>
                 <ol class="sidelist">
-                    <li><a href="https://namu.wiki/w/돼지" target="_blank">이현재</a></li>
-                    <li><a href="https://namu.wiki/w/돼지" target="_blank">이현재 축구 못함 사건</a></li>
-                    <li><a href="https://namu.wiki/w/돼지" target="_blank">이현재/논란 및 사건사고</a></li>
-                    <li><a href="https://namu.wiki/w/돼지" target="_blank">이현재 몸무게 70kg 논란</a></li>
-                    <li><a href="https://namu.wiki/w/M.C%20The%20Max" target="_blank">M.C The Max</a></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 1</a></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 2</a></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 3</a></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 4</a></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 5</a></li>
                 </ol>
             </div>
             <div class="sidebox">
@@ -98,14 +99,14 @@
                     <span class="more-icon">›</span>
                 </div>
                 <ul class="recentlist">
-                    <li><a href="https://namu.wiki/w/돼지" target="_blank">이현재</a> <span class="time">13초 전</span></li>
-                    <li><a href="https://namu.wiki/w/차은우%20모친%20법인의%20페이퍼%20컴퍼니%20의혹%20및%20200억%20원%20탈세%20논란" target="_blank">차원우 200억 탈세</a> <span class="time">15초 전</span></li>
-                    <li><a href="https://namu.wiki/w/돼지" target="_blank">이현재 몸무게</a> <span class="time">25초 전</span></li>
-                    <li><a href="https://namu.wiki/w/고양이" target="_blank">고양이</a> <span class="time">57초 전</span></li>
-                    <li><a href="https://namu.wiki/w/부엉이" target="_blank">부엉이</a> <span class="time">2분 전</span></li>
-                    <li><a href="https://namu.wiki/w/부산소프트웨어마이스터고등학교" target="_blank">부산소프트웨어마이스터고등학교</a> <span class="time">6분 전</span></li>
-                    <li><a href="https://namu.wiki/w/2진법" target="_blank">2진법</a> <span class="time">52분 전</span></li>
-                    <li><a href="https://namu.wiki/w/응%20아니야" target="_blank">응아니야</a> <span class="time">23일 전</span></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 1</a> <span class="time">13초 전</span></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 2</a> <span class="time">15초 전</span></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 3</a> <span class="time">25초 전</span></li>
+                    <li><a href="https://namu.wiki/w/고양이" target="_blank">검색어 4</a> <span class="time">57초 전</span></li>
+                    <li><a href="https://namu.wiki/w/부엉이" target="_blank">검색어 5</a> <span class="time">2분 전</span></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 6</a> <span class="time">6분 전</span></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 7</a> <span class="time">52분 전</span></li>
+                    <li><a href="https://namu.wiki" target="_blank">검색어 8</a> <span class="time">23일 전</span></li>
                 </ul>
             </div>
         </div>
